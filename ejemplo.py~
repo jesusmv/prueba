@@ -1,4 +1,5 @@
 __autor__ = 'chuy'
+import urllib2
 
 def sumaDos():
         print 10 + 20
@@ -7,12 +8,14 @@ def division(a , b):
     print result
 
 def cast():
-    t=10
-    f=10.5
+    lista =[1,2,3,"hola", {"key1":"hello"]
+    tupla =(1,2,3)
+	diccionario ={"key1","jesus","key2","juan","key3","pedro"}
+    for i in diccionario.items():
+        print "%s %s" %(k,v)
+	
     
-
-    int(10.5)
-    print
+	
 
 class Estudiante(object):
     def__init__(self, "nombre",edad):
@@ -32,11 +35,22 @@ def Exception():
     escept ZeroDivisionError as e:
         print"error"
 
+def getweb():
+    try:
+        web=urllib2.urlopen("http_//itjiquilpan.edu-mx/")
+        print web.read()
+        web.close()
+    except urllib2.HTTPError, e:
+        print e
+    except urllib2.URLError as e:
+        print e
+
 
     
 def main():
     sumaDos()
     division(100.54, 2100.0)
+    
     e=Estudiante("jesus", 15)
     print "hola %s" % e.hola()
     
