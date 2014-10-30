@@ -26,12 +26,29 @@ class Estudiante(object):
         else
             return False
 
+def Exception():
+    try:
+        3/0
+    escept ZeroDivisionError as e:
+        print"error"
+
+
     
 def main():
     sumaDos()
     division(100.54, 2100.0)
-    z=Estudiante("jesus", 15)
-    z.hola()
+    e=Estudiante("jesus", 15)
+    print "hola %s" % e.hola()
+    
+    if e.esMayor():
+        print"Es mayor de edad"
+    else
+        print "Es menor de edad"
+    
+    contador = 0
+    while contador<= 10;
+        print contador
+        contador+=1
 
 if __name__=="__main__":
      main()

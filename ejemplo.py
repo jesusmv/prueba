@@ -26,6 +26,12 @@ class Estudiante(object):
         else
             return False
 
+def Exception():
+    try:
+        3/0
+    escept ZeroDivisionError as e:
+        print"error"
+
 
     
 def main():
